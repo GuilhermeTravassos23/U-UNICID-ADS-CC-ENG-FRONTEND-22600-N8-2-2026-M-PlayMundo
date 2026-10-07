@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayMundo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #17483f;
+        }
+
+        
+        header {
+            background: #f1f5e9;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #17483f;
+            text-decoration: none;
+        }
+
+        
+        .inicio {
+            background: #063b33;
+            color: white;
+            padding: 70px 50px;
+        }
+
+        .inicio h1 {
+            font-size: 40px;
+            max-width: 500px;
+            margin: 15px 0;
+        }
+
+        .inicio p {
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        
+        section {
+            padding: 50px;
+        }
+
+        .temas {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .tema {
+            padding: 25px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .verde {
+            background: #b8efcf;
+        }
+
+        .azul {
+            background: #b8e4f2;
+        }
+
+        .amarelo {
+            background: #d9f65c;
+        }
+
+       
+        .jogos {
+            background: #f4f6ee;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .card span {
+            font-size: 12px;
+            background: #d5f3d7;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0 5px;
+        }
+
+        @media (max-width: 700px) {
+            .temas,
+            .cards {
+                flex-direction: column;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <strong>🟩 PlayMundo</strong>
+
+        <nav>
+            <a href="#">Jogos</a>
+            <a href="#">Temas</a>
+            <a href="#">Acessibilidade</a>
+        </nav>
+    </header>
+
+
+    <section class="inicio">
+
+        <h1>Jogar também é imaginar futuros melhores.</h1>
+
+        <p>
+            Descubra jogos que abordam sustentabilidade,
+            acessibilidade, diversidade e novas formas de pensar.
+        </p>
+
+        <button>Explorar jogos →</button>
+
+    </section>
+
+
+    <section>
+
+        <h2>Explore por tema</h2>
+
+        <div class="temas">
+
+            <div class="tema verde">
+                <h3>🌱 Sustentabilidade</h3>
+                <p>Jogos sobre natureza e cuidado com o planeta.</p>
+            </div>
+
+            <div class="tema azul">
+                <h3>♿ Acessibilidade</h3>
+                <p>Experiências pensadas para todo mundo jogar.</p>
+            </div>
+
+            <div class="tema amarelo">
+                <h3>🌍 Diversidade</h3>
+                <p>Histórias com diferentes culturas e perspectivas.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="jogos">
+
+        <h2>Jogos em destaque</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <span>Sustentabilidade</span>
+                <h3>Terra Nil</h3>
+                <p>Um jogo sobre recuperar um planeta destruído.</p>
+            </div>
+
+            <div class="card">
+                <span>Natureza</span>
+                <h3>A Highland Song</h3>
+                <p>Uma aventura conectada com a natureza.</p>
+            </div>
+
+            <div class="card">
+                <span>Acessibilidade</span>
+                <h3>Harmony's Odyssey</h3>
+                <p>Uma experiência de aventura e exploração.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
